@@ -1,6 +1,6 @@
-def call(CredId,tomcatIp,tomcatUser)
+def call(credId,tomcatIp,tomcatUser)
 {
-  sshagent(['CredId']) {
+  sshagent(['credId']) {
                     // some block
                     sh """
                     scp -o StrictHostKeyChecking=no target/myweb*.war ${tomcatUser}@{tomcatIp}:/opt/tomcat8/webapps/myweb.war
